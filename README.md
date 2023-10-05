@@ -1,0 +1,1 @@
+# singleton-antipattern-article
