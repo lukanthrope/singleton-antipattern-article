@@ -1,7 +1,9 @@
 class SingletonClass {
+  #initialData;
+
   constructor(initialData) {
     if (!SingletonClass.instance) {
-      this.initialData = initialData;
+      this.#initialData = initialData;
       SingletonClass.instance = this;
     }
 
@@ -9,7 +11,7 @@ class SingletonClass {
   }
 
   method() {
-    return `Method called with state: ${this.initialData}`;
+    return `Method called with state: ${this.#initialData}`;
   }
 }
 
